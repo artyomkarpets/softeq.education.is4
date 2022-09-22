@@ -3,7 +3,7 @@ using TrialsSystem.UsersService.Infrastructure.Models.UserDTOs;
 
 namespace TrialsSystem.UsersService.Api.Application.Commands.DeviceCommands
 {
-    public class CreateDeviceCommand : IRequest<CreateUserResponse>
+    public class CreateDeviceCommand : IRequest<CreateUserRequest>
     {
         public CreateDeviceCommand(string serialNumber,
             string model,

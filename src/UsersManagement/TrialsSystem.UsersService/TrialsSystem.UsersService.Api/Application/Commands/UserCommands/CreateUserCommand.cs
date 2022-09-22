@@ -1,9 +1,10 @@
 ﻿using MediatR;
+using TrialsSystem.UsersService.Infrastructure.Models.DeviceDtos;
 using TrialsSystem.UsersService.Infrastructure.Models.UserDTOs;
 
 namespace TrialsSystem.UsersService.Api.Application.Commands.UserCommands
 {
-    public class CreateUserCommand : IRequest<CreateUserResponse>
+    public class CreateUserCommand : IRequest<DeviceResponse>
     {
         public CreateUserCommand(string email,
             string name,
