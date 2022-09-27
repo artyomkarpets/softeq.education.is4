@@ -32,8 +32,6 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/src/UsersManagement/TrialsSystem.UsersService/Dockerfile'
         tags: |
           $(tag)
-    
-   
 
   - job:  NugetBuild
     displayName: Nuget Build
@@ -65,7 +63,7 @@ stages:
       displayName: 'NuGet push'
       inputs:
         command: push
-        publishVstsFeed: 'Softeq.Lernong.TrialSystem/TS_Nuget'
+        publishVstsFeed: 'Softeq.Education.TrialsSystem/TS_Nuget'
         allowPackageConflicts: true
         
 
